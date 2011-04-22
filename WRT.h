@@ -1,11 +1,3 @@
-/*
- *  WRT.h
- *  Whispering
- *
- *  Created by jerry lin on 11/17/10.
- *  Copyright 2010 __MyCompanyName__. All rights reserved.
- *
- */
 
 #ifndef __WRT_H__
 #define __WRT_H__
@@ -29,4 +21,3 @@ namespace Whispering {
 }
 
 #endif
- 
