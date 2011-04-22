@@ -48,6 +48,9 @@
 		28FD14FF0DC6FC520079059D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		28FD15070DC6FC5B0079059D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* Whispering_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whispering_Prefix.pch; sourceTree = "<group>"; };
+		621A069813617032000FEE0D /* IEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEngine.h; sourceTree = "<group>"; };
+		621A06F71361789E000FEE0D /* IPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPipeline.h; sourceTree = "<group>"; };
+		621A06F913617A4E000FEE0D /* IRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRenderer.h; sourceTree = "<group>"; };
 		627561711293CE0800640A1A /* WhisperingPCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhisperingPCH.h; sourceTree = "<group>"; };
 		627561841293DC4F00640A1A /* WRT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRT.h; sourceTree = "<group>"; };
 		627561851293DC4F00640A1A /* WRT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WRT.cpp; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				629AA9C313616CD100698891 /* new */,
 				62C5C0B9129238CE0074F0F1 /* Whispering */,
 				29B97315FDCFA39411CA2CEA /* Platform Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -163,6 +167,64 @@
 				62DB018512952DC400969384 /* MM.mm */,
 			);
 			name = Test;
+			sourceTree = "<group>";
+		};
+		629AA9C313616CD100698891 /* new */ = {
+			isa = PBXGroup;
+			children = (
+				629AAA1913616F3900698891 /* Engine */,
+				629AA9DD13616D8300698891 /* Lib */,
+				629AA9D013616D6500698891 /* Foundation */,
+				629AA9C413616CDB00698891 /* Renderer */,
+			);
+			name = new;
+			sourceTree = "<group>";
+		};
+		629AA9C413616CDB00698891 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				629AAA1513616ED800698891 /* GLES11Renderer */,
+				621A06F913617A4E000FEE0D /* IRenderer.h */,
+			);
+			name = Renderer;
+			sourceTree = "<group>";
+		};
+		629AA9D013616D6500698891 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				629AA9D113616D7000698891 /* Math */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		629AA9D113616D7000698891 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		629AA9DD13616D8300698891 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		629AAA1513616ED800698891 /* GLES11Renderer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GLES11Renderer;
+			sourceTree = "<group>";
+		};
+		629AAA1913616F3900698891 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				621A069813617032000FEE0D /* IEngine.h */,
+				621A06F71361789E000FEE0D /* IPipeline.h */,
+			);
+			name = Engine;
 			sourceTree = "<group>";
 		};
 		62C5C0B9129238CE0074F0F1 /* Whispering */ = {
